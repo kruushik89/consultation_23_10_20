@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 92px;
+    background-color: #F9F9F9;
+    border-bottom: 1px solid #3298F2;
+    box-sizing: border-box;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.header_logo {
+    width: 235px;
+}
+
+.header_logo img {
+    width: 100%;
+}
+
+.header_menu {
+    display: flex;
+}
+
+.nav_item {
+    margin: 0 12px;
+}
+
+.nav_item a {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #292929;
+    text-decoration: none;
+}
+
+.nav_item a:hover {
+    color: #3298F2;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    margin: 25px 23px 12px 35px;
+}
+
+.lang span {
+    text-transform: uppercase;
+    margin-left: 7px;
+}
+
+.header_callback button {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3298F2;
+    border: 2px solid #3298F2;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 20px 35px;
+    background-color: #F9F9F9;
+    cursor: pointer;
+}
+
+.header_callback button:hover {
+    transition: .7s;
+    box-shadow: inset 4px 4px 3px;
+}
+
+.okten {
+    padding-left: 240px;
+    padding-bottom: 150px;
+    padding-right: 100px;
+    position: relative;
+}
+
+.title {
+    width: 700px;
+}
+
+.okten_sup-title {
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FF9638;
+    margin-bottom: 50px;
+}
+
+.okten_title {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 65px;
+}
+
+.okten_title span {
+    /*display: block;*/
+    color: #3298F2;
+}
+
+.okten-body {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.okten_text {
+    font-weight: 500;
+    /*font-size: 16px;*/
+    line-height: 26px;
+    color: #333333;
+}
+
+.okten_text p:last-child {
+    margin-top: 33px;
+    font-weight: bold;
+}
+
+.okten_btn {
+    margin-top: 120px;
+}
+
+.okten_btn button {
+    background-color: #FF9638;
+    border-radius: 5px;
+    padding: 25px 35px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: #292929;
+    border: 2px solid #FF9638;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.okten_btn button span {
+    z-index: 9999;
+}
+
+.okten_btn button::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 100%;
+    position: absolute;
+    background-color: #ffffff;
+    top: 0;
+    transform: skewX(-30deg);
+    filter: blur(15px);
+    animation: xxx 3s infinite linear;
+    left: -200px;
+    opacity: 0.7;
+}
+
+@keyframes xxx {
+    from {
+        left: -200px;
+    }
+    to {
+        left: calc(100% + 150px);
+    }
+}
+
+.play {
+    border: 1px solid #FF9638;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.okten_play {
+    position: absolute;
+    width: 156px;
+    height: 156px;
+    left: 46%;
+    bottom: 150px;
+}
+
+.play_wrap {
+    width: 95px;
+    height: 95px;
+}
+
+.play_body {
+    position: relative;
+    width: 80%;
+    height: 80px;
+    border-width: 3px;
+    background-color: #c4c4c4;
+}
+
+.play_body i {
+    font-size: 25px;
+    color: #fff;
+    z-index: 5;
+}
+
+.play_body::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #FF9638;
+    border-radius: 50%;
+    animation: pulse-border 1.5s infinite ease-out;
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
